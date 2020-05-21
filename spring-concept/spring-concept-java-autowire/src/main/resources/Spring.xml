@@ -7,10 +7,10 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="electricMotor1" class="guru.springframework.autowiringdemo.cons.ElectricMotor1" />
-	<bean id="electricMotor2" class="guru.springframework.autowiringdemo.cons.ElectricMotor2" />
+	<bean id="electricMotor1" class="autowire.autowirebyname.ElectricMotor1" />
+	<bean id="electricMotor2" class="autowire.autowirebyname.ElectricMotor2" />
 
-	<bean id="modelX" class="guru.springframework.autowiringdemo.cons.Tesla"
+	<bean id="modelX" class="autowire.autowirebyname.Tesla"
 		autowire="constructor"/>
 
 </beans>

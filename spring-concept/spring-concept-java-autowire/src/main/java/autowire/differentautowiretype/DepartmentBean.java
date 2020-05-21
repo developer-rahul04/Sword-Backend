@@ -1,4 +1,4 @@
-package springframework.autowiringdemo;
+package autowire.differentautowiretype;
 
 import org.springframework.stereotype.Component;
 

@@ -6,11 +6,11 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="department" class="springframework.autowiringdemo.Department">
+    <bean id="department" class="autowire.differentautowiretype.Department">
         <property name="deptName" value="Information Technology" />
     </bean>
-    <bean id="employeeByName" class="springframework.autowiringdemo.Employee" autowire="byName"></bean>
-    <bean id="employeeByType" class="springframework.autowiringdemo.Employee" autowire="byType"></bean>
-    <bean id="employeeConstructor" class="springframework.autowiringdemo.Employee" autowire="constructor"></bean>
+    <bean id="employeeByName" class="autowire.differentautowiretype.Employee" autowire="byName"></bean>
+    <bean id="employeeByType" class="autowire.differentautowiretype.Employee" autowire="byType"></bean>
+    <bean id="employeeConstructor" class="autowire.differentautowiretype.Employee" autowire="constructor"></bean>
 
 </beans>

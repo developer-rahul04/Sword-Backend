@@ -12,46 +12,30 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.service.LoginService;
 
-/*
- * Browser sends Http Request to Web Server
- * 
- * Code in Web Server => Input:HttpRequest, Output: HttpResponse
- * JEE with Servlets
- * 
- * Web Server responds with Http Response
- */
-
-//Java Platform, Enterprise Edition (Java EE) JEE6
-
-//Servlet is a Java programming language class 
-//used to extend the capabilities of servers 
-//that host applications accessed by means of 
-//a request-response programming model.
-
-//1. extends javax.servlet.http.HttpServlet
-//2. @WebServlet(urlPatterns = "/login.do")
-//3. doGet(HttpServletRequest request, HttpServletResponse response)
-//4. How is the response created?
 
 @Controller
 public class LoginServlet extends HttpServlet {
 	
 	  static Logger log = Logger.getLogger(LoginServlet.class.getName());
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
+	
 	@Autowired
 	public LoginService servicea ;
 	
 	@RequestMapping("/login")
 	private static String getFirstPage() {
+		System.out.println("login");
 		return "Login";
 	}
 	
+	@RequestMapping("/")
+	private static String getWelcomePage() {
+		System.out.println("first");
+		return "first";
+	}
+	
 	@RequestMapping(value = "/welcome", method = RequestMethod.POST)
-	//@ResponseBody
 	private String getWelcomePage(@RequestParam String name,@RequestParam String password,ModelMap map) {
 		log.info("Inside getWelcomePage");
 		if(servicea.validateUser(name, password)) {

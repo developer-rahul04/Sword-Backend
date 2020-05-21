@@ -1,6 +1,7 @@
-package springframework.autowiringdemo;
+package autowire.differentautowiretype;
 
 public class Employee {
+	
     private int eid;
     private String ename;
     private Department department;

@@ -6,6 +6,6 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/service"/>
         <property name="java-output-path" value="/sample-web-app-servlet/target/classes"/>
-        <property name="context-root" value="spring-mvc-web-app"/>
+        <property name="context-root" value="spring-mvc-web-app-xml-config"/>
     </wb-module>
 </project-modules>

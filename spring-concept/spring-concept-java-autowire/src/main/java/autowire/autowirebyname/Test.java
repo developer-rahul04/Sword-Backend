@@ -1,4 +1,4 @@
-package springframework.autowiringdemo.cons;
+package autowire.autowirebyname;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

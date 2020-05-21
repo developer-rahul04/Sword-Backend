@@ -1,6 +1,7 @@
-package springframework.autowiringdemo;
+package autowire.differentautowiretype;
 
 public class Department {
+	
     private String deptName;
 
     public String getDeptName() {

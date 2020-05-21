@@ -1,4 +1,4 @@
-package springframework.autowiringdemo.cons;
+package autowire.autowirebyname;
 
 public class ElectricMotor2 implements Motor {
 
