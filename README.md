@@ -1,16 +1,18 @@
+
+  
 Spring KB Contents
 
-0.1 Configuration 
-Spring Framework? 
-	Features of Spring Framework? 
-	Dependency Injection? 
-	Types of IOC containers? 
-	Difference between BeanFactory and ApplicationContext are following: 
-Spring Beans? 
-	Bean in Spring is a lightweight and flexible framework. 
-	Like bean life-cycle.
-	Configuration metadata? 
-	Bean scopes? 
+0.1 Configuration  
+Spring Framework?   
+	Features of Spring Framework?  
+	Dependency Injection?  
+	Types of IOC containers?  
+	Difference between BeanFactory and ApplicationContext are following:  
+Spring Beans?  
+	Bean in Spring is a lightweight and flexible framework.  
+	Like bean life-cycle. 
+	Configuration metadata?  
+	Bean scopes?  
 	Explain Scoped Proxy in Spring  
 	Type of Scope Combination where proxy Mode is helpful? 
 	Define Bean Wiring? 
@@ -68,3 +70,5 @@ Spring Boot -> Web App Java Configuration
 	RequestMapping and GetMapping? 
 	What is the need for Profiles? 
 	What is “Transitively Dependency Resolution Management
+
+
