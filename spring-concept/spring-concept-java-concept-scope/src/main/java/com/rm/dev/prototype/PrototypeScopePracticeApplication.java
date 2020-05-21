@@ -1,27 +1,26 @@
-package com.rm.dev.springconcept;
+package com.rm.dev.prototype;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.rm.dev.springconcept.scope.MessagingScope;
+import com.rm.dev.prototype.scope.MessagingScopeP;
 
 @SpringBootApplication
-@ComponentScan("com.rm.dev.springconcept")
-public class ScopePracticeApplication {
+public class PrototypeScopePracticeApplication {
 
 	public static void main(String[] args) {
 
-		ApplicationContext context = SpringApplication.run(ScopePracticeApplication.class, args);
+		ApplicationContext context = SpringApplication.run(PrototypeScopePracticeApplication.class, args);
 
-		// Singleton
-		MessagingScope scope = context.getBean(MessagingScope.class);
+		// Prototype
+		MessagingScopeP scope = context.getBean(MessagingScopeP.class);
 
 		scope.sendMessaging();
 		
-		// Singleton
-		MessagingScope scope2 = context.getBean(MessagingScope.class);
+		// Prototype
+		MessagingScopeP scope2 = context.getBean(MessagingScopeP.class);
 
 		scope.sendMessaging();
 		

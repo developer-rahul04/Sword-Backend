@@ -1,20 +1,16 @@
-package com.rm.dev.springconcept.scope;
+package com.rm.dev.onlysingleton.scope;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
-import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
 
 @Component
-@org.springframework.context.annotation.Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE
-,proxyMode = ScopedProxyMode.TARGET_CLASS)
-public class NetworkAuth {
+public class NetworkAuthSingleton {
 
 	int id = 0;
 
-	public NetworkAuth() {
+	public NetworkAuthSingleton() {
 
 	}
 
